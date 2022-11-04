@@ -25,13 +25,15 @@ Os usuários devem ser capazes de:
 - Visualize o layout ideal dependendo do tamanho da tela do dispositivo
 - Veja os estados de foco e foco para elementos interativos
 
-### Captura de tela
-![](./images/captura/Captura%20de%20tela_mobile.jpg)
-![](./images/captura/Captura%20de%20tela_desktop.jpg)
-
 ### Links
 
-- URL do desafio: (https://lynamara.github.io/Desafio-Frontend-Mentor-1.github.io/)
+- URL da solução: (https://lynamara.github.io/Desafio-Frontend-Mentor-1.github.io/)
+
+### Captura de tela
+#### Imagem versão mobile
+  ![](./images/captura/Captura%20de%20tela_mobile.jpg)
+#### Imagem versão desktop
+  ![](./images/captura/Captura%20de%20tela_desktop.jpg)
 
 ## Meu processo
 
