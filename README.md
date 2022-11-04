@@ -4,7 +4,7 @@ Esta é uma solução para o [desafio do componente do cartão de visualização
 
 ## Índice
 
-- [Visão geral](#visão geral)
+- [Visão geral](#visão-geral)
   - [O desafio](#o-desafio)
   - [Captura de tela](#captura-de-tela)
   - [Links](#links)
@@ -15,8 +15,6 @@ Esta é uma solução para o [desafio do componente do cartão de visualização
   - [Recursos úteis](#recursos-uteis)
 - [Autor](#autor)
 - [Agradecimentos](#agradecimentos)
-
-**Observação: exclua esta nota e atualize o índice com base nas seções que você mantém.**
 
 ## Visão geral
 
