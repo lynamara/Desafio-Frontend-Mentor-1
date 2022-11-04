@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 100%;
+      background-color: hsl(30, 38%, 92%);
+      font-size: 14px;
+    }
+
+    .cartao {
+      border-radius: 10px;
+    }
+
+    .img-produto {
+      width: 100%;
+      height: 100%;
+    }
+
+    .conteudo {
+      padding: 3vh;
+    }
+
+    p {
+      color: hsl(228, 12%, 48%);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+
+    .categoria>p {
+      font-size: 2.5vh;
+      letter-spacing: 0.5vh;
+    }
+
+    .nome>h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      color: hsl(212, 21%, 14%);
+      margin-bottom: 1.2vh;
+      padding-right: 0.5vh;
+    }
+
+    .promo {
+      font-family: 'Fraunces', serif;
+      font-size: 5vh;
+      color: hsl(158, 36%, 37%);
+      padding-right: 1vh;
+    }
+
+    .orig {
+      vertical-align: 1vh;
+      color: hsl(228, 12%, 48%);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 2vh;
+    }
+
+    .selecionar>button {
+      background-color: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+      width: 100%;
+      vertical-align: middle;
+      height: 6vh;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .botao>span {
+      font-family: 'Montserrat', serif;
+      vertical-align: 3px;
+      padding-left: 8px;
+      font-weight: 500;
+      font-size: 2.7vh;
+    }
+
+    .botao:hover {
+      background-color: hsl(158, 69%, 17%);
+    }
+
+    .attribution a {
+      color: hsl(158, 36%, 37%);
+    }
+
+    .attribution {
+      margin-top: 2.5vh;
+      font-size: 2.5vh;
+      text-align: center;
+      color: hsl(212, 21%, 14%);
+    }
+
+    @media all and (min-width: 1024px) {
+      .cartao {
+        width: 50vw;
+        margin: 13vh auto;
+        height: 74vh;
+      }
+
+      .content-left {
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+
+      .content-left picture>img {
+        border-radius: 10px 0 0 10px;
+      }
+
+      .content-right {
+        background-color: hsl(0, 0%, 100%);
+        width: 50%;
+        height: 100%;
+        float: right;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .conteudo {
+        margin: 1.3vh;
+      }
+
+      .conteudo>div {
+        border-radius: 10px 0 0 10px;
+      }
+
+      .nome>h2 {
+        margin: 2.5vh 0 2.5vh 0;
+        font-size: 3vmax;
+        line-height: 5.5vh;
+      }
+
+      .desc {
+        font-size: 2.2vh;
+        line-height: 3.4vh;
+      }
+
+      .preco {
+        margin: 2.5vh 0 3.5vh 0;
+      }
+
+      .botao>img {
+        width: 2.5vmin;
+      }
+    }
+
+    @media all and (min-width:375px) and (max-width:1023px) {
+      .cartao {
+        width: 92%;
+        margin: 4vh auto;
+        height: 92vh;
+        border-radius: 10px;
+      }
+
+      .content-left {
+        width: 100%;
+        height: 38%;
+      }
+
+      .content-left picture>img {
+        border-radius: 10px 10px 0 0;
+      }
+
+      .content-right {
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        height: 62%;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .categoria>p {
+        margin-bottom: 1.2vh;
+        letter-spacing: 0.5vh;
+      }
+
+      .nome>h2 {
+        font-size: 4.5vh;
+      }
+
+      .desc {
+        font-size: 2.2vh;
+        line-height: 3vh;
+      }
+
+      .preco {
+        margin: 1vh 0 2vh 0;
+      }
+
+      .botao>img {
+        width: 4vmin;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="cartao">
+    <div class="content-left">
+      <div class="img-produto">
+        <picture>
+          <source media="(min-width:375px) and (max-width:1023px)" srcset="./images/image-product-mobile.jpg"
+            width="100%" height="100%">
+          <source media="(min-width:1024px)" srcset="./images/image-product-desktop.jpg" width="100%" height="100%">
+          <img src="images/favicon-32x32.png" alt="perfume-img">
+        </picture>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="conteudo">
+        <div class="categoria">
+          <p><small>PERFUME</small></p>
+        </div>
+        <div class="nome">
+          <h2>Gabrielle Essence Eau De Parfum</h2>
+        </div>
+        <div class="desc">
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+            CHANEL.</p>
+        </div>
+        <div class="preco">
+          <b class="promo">$149.99</b>
+          <span class="orig"><del>$169.99</del></span>
+        </div>
+        <div class="selecionar">
+          <button class="botao">
+            <img src="./images/icon-cart.svg" alt="">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/lynamara">Lynamara</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
